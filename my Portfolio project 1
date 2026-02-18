@@ -5,6 +5,7 @@
         <title>Technology - BBC News</title>
 
         <style type="text/css">
+
             #topbar {
                 width:1000px;
                 margin:0 auto;
@@ -259,12 +260,13 @@
             #article-summary {
 
                 color: #5a5a5a;
-                width: 310px;
+                width: 300px;
                 margin-left: 181px;
+                float: left;
 
             }
 
-            #article-summary img {
+            .clock {
 
                 height: 13px;
                 position:relative;
@@ -272,7 +274,7 @@
 
             }
 
-            #article-summary a {
+            .topic-link {
 
                 text-decoration: none;
                 color:#a91717;
@@ -287,10 +289,106 @@
 
             }
 
-            #date{
+            .date {
 
                 padding-right:10px;
+                color:#5a5a5a;
             }
+
+            #article-container { 
+
+                float: left;
+                width: 900px;
+                border-right: 1px solid #CCCCCC;
+                padding-right: 20px;
+
+            }
+
+            #main-article-image {
+
+                width: 400px;
+                float:right;
+                position: relative;
+                left:0px
+
+            }
+
+            #article-hr {
+
+                border-top:1px solid #a91717;
+                width: 50px;
+
+            }
+
+            .article-link{
+
+                color:black;
+                text-decoration: none;
+
+            }
+
+            #watch-listen {
+
+                position:relative; 
+                left: 20px;
+                width: 350px;
+                float:left;
+
+            }
+
+            h4 {
+
+                font-weight: normal;
+                font-size:20px;
+                
+            }
+
+            .article-side-image {
+
+                float: left;
+                width: 120px;
+                margin-right: 10px;
+
+            }
+
+            .watch-listen-link {
+
+                text-decoration: none;
+                color:black;
+                font-weight: bold;
+                font-size: 18px;
+
+            }
+
+            .watch-listen-link:hover{
+
+                color: #1167a8
+
+            }
+
+            .side-article {
+
+                float: right;
+                width: 250px;
+                position: relative;
+                top:-85px;
+                left: 25px;
+
+            }
+
+            .no-border {
+
+                border-left: none;
+                padding: 0;
+
+            }
+
+            .border-right {
+
+                border-right: 1px solid #CCCCCC; 
+
+            }
+
 
         </style> 
     
@@ -429,13 +527,65 @@
 
                 <h2>Technology</h2>
 
-                <h3><a href="">Asda bug exposed payment details</a></h3>
+                <div id="article-container">
 
-                <div id="article-summary">
+                    <h3><a href="">Asda bug exposed payment details</a></h3>
+                    
+                    <div id="article-summary">
 
-                    <p>Security vulnerabilities  that put customers at risk have affected asda's website for a couple of years, a security expert has revealed.</p>
+                        <p>Security vulnerabilities  that put customers at risk have affected asda's website for a couple of years, a security expert has revealed.</p>
+                        
+                        <p><img class="clock" src="images/Clock.jpg"><span class="date">19 January 2016</span><a class="topic-link" href="">Technology</a></p>
 
-                    <p><img src="images/Clock.jpg"><span id="date">19 January 2016</span><a href="">Technology</a></p>
+                        <hr id="article-hr" align="left">
+
+                        <p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
+
+                        <p><a class="article-link" href="">eBay flaw has existed for months</a></p>
+
+                    </div>
+
+                    <img id="main-article-image" src="images/main-article-image.jpg"> 
+
+                 </div>
+
+            </div>
+
+            <div id="watch-listen">
+
+                <h4>Watch/Listen</h4>
+
+                <img class="article-side-image" src="images/article1.jpg">
+
+                <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="">UK science chief backs blockchains</a></p>
+
+                    <p><img class="clock" src="images/Clock.jpg"><span class="date">19 January 2016</span></p>
+
+                </div>
+
+                <div class="clear"></div>
+
+                <img class="article-side-image" src="images/article2.jpg">
+
+                <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="">Drone register give 'accountability'</a></p>
+
+                    <p><img class="clock" src="images/Clock.jpg"><span  class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Technology</a></p>
+
+                </div>
+
+                <div class="clear"></div>
+
+                <img class="article-side-image" src="images/article3.jpg">
+
+                <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="">SpaceX rocket explodes during landing</a></p>
+
+                    <p><img class="clock" src="images/Clock.jpg"><span  class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Science & Environment</a></p>
 
                 </div>
 
